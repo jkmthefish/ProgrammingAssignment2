@@ -1,15 +1,18 @@
 ## This function looks for the cache and creates if it does not already exist. 
-## functions do
-
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
 
 }
 
 
-## This function creates the inverse if it does not already exist. 
+## IF it doesn't already exist, This function creates the inverse if it does not already exist. 
+if(!is.null(m)){
+        message("getting cached data")
+        return(m)
+}
+
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+        newMatrix <- solve((makeCacheMatrix))## Return a matrix that is the inverse of 'x'
+        return(newMatrix)
 }
