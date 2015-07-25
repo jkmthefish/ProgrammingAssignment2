@@ -10,9 +10,7 @@ makeCacheMatrix <- function(x = matrix()) {
         solveMatrix <- function(solve) s <<- solve  ##function for inverting the matrix
         getInvertMatrix <- function() s   ## creates spot for new Inverted matrix to go
         list(set = set, get = get,  solveMatrix = solveMatrix, getInvertMatrix = getInvertMatrix)  ## Puts it all together
-                    
 }
-
 
 ##  This function creates the inverse if it does not already exist. Checks for Null (already exist),
 
